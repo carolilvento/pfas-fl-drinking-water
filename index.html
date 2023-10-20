@@ -605,8 +605,8 @@ addAddressSuggestions();
             (obj) => obj.properties["Total PFAS ppt"] === highestValue
           );
 
-          if (highestFeature)  // If a feature with the highest PFAS value is found:
-            const highestCoordinates = highestFeature.geometry.coordinates; // Get the coordinates of the highest feature.
+          if (highestFeature)  {
+            const highestCoordinates = highestFeature.geometry.coordinates; // Get the coordinates of the highest feature
             var highestMarker = L.marker([highestCoordinates[1], highestCoordinates[0]], { icon: dotIcon }).addTo(map);
 
             highestMarker.bindPopup(
