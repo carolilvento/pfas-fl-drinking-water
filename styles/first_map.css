@@ -1,0 +1,242 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  color: #000;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f6f3;
+  line-height: 1.5;
+}
+
+#map {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: #ffff;
+  background-color: #d2b48c;
+  padding: 1rem;
+}
+
+h3 {
+  color: #b38b4d;
+}
+
+h5 {
+  text-align: center;
+  color: #b38b4d;
+  font-size: 1.5rem;
+}
+
+.quote {
+  font-style: italic;
+  color: #978E84;
+}
+
+#attribution {
+  text-align: center; /* Horizontally center the text */
+  margin: 0 auto; /* Center the element itself within its container */
+  display: block; /* Make sure it's a block-level element for margin auto to work */
+}
+
+#info {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 2px solid #d2b48c; /* Color of the line */
+  margin: 0;
+  padding: 0;
+}
+
+#methodology {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.legend {
+    line-height: 18px;
+    color: #555;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.location-message {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  color: #000;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f6f3;
+  line-height: 1.5;
+}
+
+header nav{
+  max-width: 900px;
+  margin: auto;
+}
+
+header ul {
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly; /* Spread items evenly */
+}
+
+header li {
+  margin: 0;
+}
+
+header a {
+  color: #b38b4d;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: #d2b48c;
+  color: #fff;
+}
+
+/* Normal state */
+a {
+  color: #b38b4d; /* Text color in normal state */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover state */
+a:hover {
+  text-decoration: underline;
+}
+
+/* After clicked state */
+a:active {
+  color: #d2b48c; /* Text color after being clicked */
+}
+
+
+.custom-dot-icon {
+   width: 10px; /* Adjust the size as needed */
+   height: 10px; /* Adjust the size as needed */
+   background-color: #0074D9; /* Blue color */
+   border: 2px solid #001f3f; /* Darker blue outline */
+   border-radius: 50%; /* Make it circular */
+}
+
+#search-container {
+  padding: 10px;
+  border: 2px solid #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100%;
+}
+
+#address-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 460px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d2b48c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+}
+#search-button:hover {
+  background-color: #b38b4d; /* Darker beige on hover */
+  color: #fff;
+}
+
+/* Center the button horizontally and vertically on the page */
+#page-button {
+  display: block;
+  margin: auto;
+  background-color: #d2b48c;
+  padding: 16px;
+  color: #f9f6f3;
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+}
+
+#page-button:hover {
+  background-color: #b38b4d; /* Darker beige on hover */
+  color: #fff;
+}
+
+.suggestions-container {
+  width: 100%; /* Occupy the entire width of the container */
+  position: relative;
+  top: 100%; /* Position suggestions below the search-input-container */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 1rem;
+  }
+  header nav {
+    width: 100%;
+    margin: 1rem;
+  }
+}
