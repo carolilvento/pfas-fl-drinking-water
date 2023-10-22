@@ -540,7 +540,7 @@ addAddressSuggestions();
 
                 }
                 else{
-                infobox.textContent1 = `In a 2023 study, ${count} households tap water were tested in your area.The highest value of deviation of PFAS is ${highestValue}. Types of PFAS tested were ${tested}, and ${detected} were detected.`;
+                infobox.textContent1 = `In a 2023 study, ${count} households tap water were tested in your area.The highest detection of PFAS is ${highestValue}. There were ${tested} types of PFAS tested , and ${detected} were detected.`;
               }}
             });
           }
@@ -699,11 +699,11 @@ addAddressSuggestions();
 
               // InfoBox display for facility data
 
-                    infobox.textContent1 = `. You are being served by the water provider:
-                    ${highestFeature.properties.Facility}.
-                    In its latest testing in ${highestFeature.properties.Year},
-                    this facility detected ${highestFeature.properties["# PFAS detected"]}
-                    types of PFAS, amounting to a total of ${highestFeature.properties["Total PFAS ppt"]} ppt.`;
+              infobox.textContent1 = ` You are being served by the water provider:
+               ${highestFeature.properties.Facility}.
+               In its latest testing in ${highestFeature.properties.Year},
+               this facility detected ${highestFeature.properties["# PFAS detected"]}
+               types of PFAS, amounting to a total of ${highestFeature.properties["Total PFAS ppt"]} ppt.`;
 
                     // ultimate infobox display
                     if (infobox.textContentb !== infobox.textContenta) {
