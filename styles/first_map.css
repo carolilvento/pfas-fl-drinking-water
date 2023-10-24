@@ -186,7 +186,7 @@ a:active {
   border: none;
   border-radius: 5px;
   outline: none;
-  width: 460px;
+  width: 80%;
 }
 
 #search-button {
@@ -230,6 +230,14 @@ a:active {
   border-top: none;
 }
 
+#hamburger-icon {
+  display: none;
+}
+
+#expanded-menu {
+  display: none;
+}
+
 
 @media screen and (max-width: 400px) {
   body {
@@ -237,18 +245,33 @@ a:active {
   }
 
   header nav {
-    max-width: 900px;
-    margin: auto;
+    display: none;
   }
 
-  header ul {
+  /* Style for the hamburger menu icon */
+  #hamburger-icon {
+    display: block;
+    cursor: pointer;
+    color: #b38b4d;
+    padding: 1rem;
+  }
+
+  #hamburger-icon a:hover {
+    background-color: #d2b48c;
+    color: #fff;
+  }
+
+  #expanded-menu {
+    display: none;
+  }
+
+  #expanded-menu ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 1rem;
   }
 
-  header li {
-    margin: 0;
+  #close-icon {
+    display: none;
+    cursor: pointer;
   }
 }

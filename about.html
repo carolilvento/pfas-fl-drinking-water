@@ -23,6 +23,35 @@
     </nav>
 </header>
 
+<div id="hamburger-icon">&#9776; See Menu</div>
+<div id="expanded-menu">
+  <ul>
+    <li><a href="about.html">What Is PFAS?</a></li>
+    <li><a href="index.html">Contaminated Facilities </a></li>
+    <li><a href="accountability.html">What Is Being Done</a></li>
+    <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+    <li><a href="solutions.html">What You Can Do</a></li>
+  </ul>
+</div>
+
+<script>
+//mobile nav bar hamburger icon
+
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const expandedMenu = document.getElementById("expanded-menu");
+
+// Add a click event listener to the hamburger icon
+hamburgerIcon.addEventListener("click", () => {
+  // Toggle the display of the expanded menu
+  if (expandedMenu.style.display === "block") {
+    expandedMenu.style.display = "none";
+  } else {
+    expandedMenu.style.display = "block";
+  }
+});
+
+</script>
+
 <body>
 
 <h1> Making Sense of Forever Chemicals </h1>
