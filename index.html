@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PFAS in Drinking Water</title>
+  <title>PFAS in Drinking Water: Intro</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
   <link rel="stylesheet" href="styles/first_map.css">
 </head>
 
-<header>
+<header id="navbar">
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What Is PFAS?</a></li>
-        <li><a href="index.html">Contaminated Facilities </a></li>
-        <li><a href="accountability.html">What Is Being Done</a></li>
-        <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+        <li><a href="map.html">Is Your Water Contaminated? </a></li>
+        <li><a href="accountability.html">From Discovery to Regulation</a></li>
+        <li><a href="impact.html">Human Impact</a></li>
         <li><a href="solutions.html">What You Can Do</a></li>
       </ul>
     </nav>
@@ -25,766 +26,61 @@
 <div id="hamburger-icon">&#9776; See Menu</div>
 <div id="expanded-menu">
   <ul>
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">What Is PFAS?</a></li>
-    <li><a href="index.html">Contaminated Facilities </a></li>
-    <li><a href="accountability.html">What Is Being Done</a></li>
-    <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+    <li><a href="map.html">Is Your Water Contaminated? </a></li>
+    <li><a href="accountability.html">From Discovery to Regulation</a></li>
+    <li><a href="impact.html">Human Impact</a></li>
     <li><a href="solutions.html">What You Can Do</a></li>
   </ul>
 </div>
 
 <body>
 
-<!------------------------------------------ TITLE ----------------------------------->
-  <h1>PFAS Contamination in Florida Drinking Water</h1>
+<div id=titlepage>
 
-  <!------------------------------------------ ATTRIBUTION ----------------------------------->
-  <i id=attribution>By Carolina Ilvento</i>
-<!------------------------------------------ DESCRIPTION ----------------------------------->
-<p>At least 4.5 million Floridians have their household tap water contaminated with PFAS, or per- and polyfluoroalkyl substances, levels higher than suggested by the Environmental Protection Agency. </p>
+  <h2 id=subtitle>
+Unveiling PFAS in Florida's Drinking Water:
+    </h2>
 
-<p>PFAS, also popularly known as "forever chemicals," are a group of synthetic chemicals that build up in the environment and human body over time. Researchers have linked high level exposure to increased risk to health implications.</p>
+    <h1 id=title>
+      Is Your Water Safe?
+      </h1>
+    <br>
 
-<a href="about.html">
-  <button id=page-button> Learn more about PFAS </button>
+    <i id=attribution>By Carolina Ilvento</i>
+</div>
+
+<div id=content>
+<br>
+<h4>
+  Are you concerned about the presence of <i>"forever chemicals"</i> in your drinking water sources?
+</h4>
+
+<p>
+Per- and polyfluoroalkyl substances (PFAS) are notorious for their remarkable persistence in both the environment and the human body. The composition and bioaccumulation of these substances have been associated with a spectrum of health risks, including potential links to cancer, developmental issues, and decreased fertility. The most common route of exposure to PFAS is through the consumption of contaminated drinking water. </p>
+
+<p>This project introduces a comprehensive overview of the chemicals along with an interactive map that enables you to explore water providers in your area and check for recent testing conducted at water treatment facilities and in individual households' tap water.
+</p>
+<br>
+
+<a href="about.html"</a>
+  <button id=page-button>Continue to Part 1: Understanding PFAS
+</button>
 </a>
 
-<p>Some facilities have detected levels as high as nearly 700 ppt — over 175 times higher than the proposed safe limit. The EPA proposed a standard of 4 parts per trillion of PFOA and PFOS combined, as well as and a hazard index of four other PFAS in drinking water. </p>
+<br>
 
-<p>Although the EPA's standards are not yet finalized, the <a href="https://www.epa.gov/dwucmr/occurrence-data-unregulated-contaminant-monitoring-rule#5">Unregulated Contaminants Monitoring Rule (UCMR)</a> mandates that public water systems serving more than 3,300 residents must test for four types of PFAS every five years.</p>
+</div>
 
-<p>The latest <a href="https://www.epa.gov/dwucmr/data-summary-fifth-unregulated-contaminant-monitoring-rule">data</a>, released in July, revealed PFAS detection in 33 water systems across the state.</p>
+<footer>
+    <p>&copy; 2023 Carolina Ilvento |
+    <i>Contact: carolilvento@gmail.com</i> </p>
+</footer>
 
-<p>In addition to these mandated tests, certain facilities in Florida have exercised their discretion to conduct additional testing, both in terms of frequency and comprehensiveness.</p>
 
-<p>Researchers from various institutions across the state have also been diligently studying the presence of PFAS in soil, water, wildlife, and even in the food supply. </p>
 
-<p>Dr. John Bowden, a respected researcher and professor at the University of Florida, has dedicated several years to understanding the presence and risks associated with PFAS. In his most recent study, Dr. Bowden collected tap water samples from 460 households spanning every county in Florida, conducting tests for 24 different types of PFAS.</p>
 
-<p>The study's results revealed the highest PFAS detections in Monroe, Hamilton, Escambia, Miami-Dade, Broward, Indian River, and Okeechobee Counties, with contamination levels ranging from 50 ppt to 219 ppt.</p>
-
-<h2><a name="pfas-in-water"></a>Is Your Tap Water Contaminated With PFAS?</h2>
-
-<p>The map provided below offers data from water treatment facilities that have reported PFAS levels exceeding the EPA's proposed guidelines, compared to results at household's tap water level in every Florida county.</p>
-
-<!------------------------------------------ SERVICE AREA BOX INFO ----------------------------------->
-  <div id="info">
-    <p>Input your address in the search box below to find testing results of water treatment facilities serving your area and the highest detection of PFAS concentrations found in neighboring households within your county.</p>
-  </div> <br>
-
-  <!------------------------------------------ SEARCH BAR ----------------------------------->
-  <div id="search-container">
-      <input type="text" id="address-input" placeholder="Enter an address">
-      <button id="search-button">Search</button>
-  </div>
-  <div class="suggestions-container">
-      <!-- Suggestions will be displayed here -->
-    </div>
-  <br>
-
-  <div id="container"></div>
-  <br>
-
-  <!------------------------------------------ MAP DISPLAY ----------------------------------->
-  <div id="map" ></div>
-  <br>
-  <i> Note: Public water systems serving less than 3,300 and those not testing for PFAS are not included in the map. If data is not available in your area, you can find your provider on your water bill and request the most recent testing for PFAS. </i>
-
-  <!------------------------------------------ GRAPH DISPLAY ----------------------------------->
-
-  <div id="graph"></div>
-  <br>
-
-<!-- <h2>Key Findings</h2>
-<p>Add info about Miami Dade, ECUA and Monroe</p>
-<p>Add chloropleth map showing Bowden’s PFAS data</p>
-<p>Interview from ewg, bowden and toledo</p> -->
-
-<h2>What the Data Might Hide</h2>
-
-<p>With ongoing research into PFAS contamination in Florida's drinking water and developing guidelines and regulations for the chemical, it's important to acknowledge the existing data gaps and limitations in understanding the findings of this complex chemical.</p>
-
-<p>Some of the notable data gaps include:</p>
-
-<b>1. Limited Sampling Sites:</b> <p>Data does not include every water source in the state. Due to a lack of enforced standards, not every facility has conducted testing or made it public so it's possible that some PFAS-contaminated areas remain undetected.</p>
-
-<b>2. Variability in PFAS Types and Lack of Regulations: </b><p>PFAS are a broad class of chemicals with thousands of variants, and not all are tested for.   While some facilities test for numerous PFAS varieties, others test just a few or none at all. This inconsistency creates data gaps and may lead to variations in reported results that don't accurately represent the actual PFAS concentration.</p>
-
-<b>3. Infrastructure Issues: </b><p>While treatment plants may efficiently reduce PFAS concentrations in water, trace contaminants can persist as water travels through distribution systems and ultimately reaches consumers' taps. Factors like treatment process effectiveness, infrastructure condition, and contamination source can contribute to differences in PFAS exposure between plants and households.</p>
-
-<div id=methodology>
-  <h2>Methodology</h2>
-    <p>The information on this page was compiled from public records requests sent to water treatment facilities across the state, information gathered as part of the EPA's Unregulated Contaminants Monitoring Rule as of July 5th, and a forthcoming study on PFAS in tap water by Dr. John Bowden from the University of Florida.</p>
-
-    <p>Public Records Requests were made to water treatment facilities for service areas and most recent PFAS testing. Information on map and graphs provided display highest detections in water treatment facilities. </p>
-
-    <p>Service areas had common areas in some facilities and were not provided by others. For areas with multiple facilities serving the same area, information is included from all relevant facilities that might attend the area and highest detection results are displayed. In places where service areas were not specified, data will reflect information from facilities in county.</p>
-
-    <p>In the event that your location does not have testing results from facilities, check your water bill for your water provider's information and request their latest PFAS testing results. It is possible that testing has not been conducted, as it is not mandated by the Environmental Protection Agency as of October 2023.</p>
-
-    <p>All tap water data was provided by Dr. Bowden, who tested tap water in 460 households across Florida. Specific locations are not disclosed to protect homeowners' privacy. The data shows the number of household samplings in your service area or county and represents the highest recorded PFAS level.</p>
-
-    <p>Data and analysis was informed by interviews and discussions with the water treatment testing supervisors, Environmental Working Group advisors and Dr. Bowden. Data was updated Oct 20.</p>
-
-
-
-  <div>
-
 </body>
-  <!------------------------------------------ SCRIPTS IMPORT ----------------------------------->
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/themes/grid-light.js"></script>
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/highcharts-more.js"></script>
-  <script src="https://code.highcharts.com/modules/export-data.js"></script>
-  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.3.0/turf.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
-  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css'/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
-
-
-
-<!-- // service areas // -->
-  <script src="service_areas/ecua.js"></script>
-  <script src="service_areas/lauderhill.js"></script>
-  <script src="service_areas/miami.js"></script>
-  <script src="service_areas/zephryhills.js"></script>
-  <script src="service_areas/stuart.js"></script>
-  <script src="service_areas/lee.js"></script>
-  <script src="service_areas/newport.js"></script>
-  <script src="service_areas/pasco.js"></script>
-  <script src="service_areas/pinellas.js"></script>
-  <script src="service_areas/stpete.js"></script>
-  <script src="service_areas/tampa.js"></script>
-  <script src="service_areas/hillsborough.js"></script>
-
-<!-- //PFAS data// -->
-  <script src="PFAS_data/facilities.js"></script>
-  <script src="PFAS_data/tap.js"></script>
-
-<!-- //counties -->
-  <script src="counties/countiesMap.js"></script>
-
-
-  <!------------------------------------------ CUSTOM SCRIPT ----------------------------------->
-  <script>
-  // Create a Leaflet map with specified coordinates and zoom level
-  function createMap() {
-    // Initialize the map and set its view
-    var map = L.map("map").setView([28.256686, -83.716843], 6.33);
-
-    // Add a Mapbox tile layer to the map
-    L.tileLayer(
-      "https://api.mapbox.com/styles/v1/carolilvento/cle5x14pl001a01pb1rzh9ay6/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY2Fyb2xpbHZlbnRvIiwiYSI6ImNsZTV3dmtvcDAwOHUzcWxlOHNhZThybDIifQ.JpySVKFAYhvuRRULnwC1hQ",
-      {
-        maxZoom: 18,
-        attribution:
-          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
-      }
-    ).addTo(map);
-
-    return map;
-  }
-
-  // Create a search box and button on the map
-  function addSearchBox(map) {
-    // Create the search container and add it to the map's container
-    const searchContainer = L.DomUtil.create(
-      "div",
-      "search-container",
-      map.getContainer()
-    );
-    searchContainer.innerHTML = `
-        <input type="text" id="address-input" placeholder="Enter an address">
-        <button id="search-button">Search</button>
-    `;
-    return map;
-  }
-
-  var marker;
-
-  // Add address suggestions based on user input
-  function addAddressSuggestions() {
-    const addressInput = document.getElementById("address-input");
-    const suggestionsContainer = document.createElement("div");
-    suggestionsContainer.id = "suggestions-container";
-
-    addressInput.parentNode.appendChild(suggestionsContainer);
-
-    addressInput.addEventListener("input", () => {
-      const input = addressInput.value;
-      const accessToken =
-        "pk.eyJ1IjoiY2Fyb2xpbHZlbnRvIiwiYSI6ImNsbnEyaTdldjBkdXkya213OHBhb2pwZDkifQ.ED9XSiqi2hA4t50jKbbj2w";
-      const url =
-        "https://api.mapbox.com/geocoding/v5/mapbox.places/" +
-        encodeURIComponent(input) +
-        ".json?access_token=" +
-        accessToken;
-      // Fetch address suggestions from Mapbox API
-      fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.features) {
-            const suggestions = data.features.map(
-              (feature) => feature.place_name
-            );
-
-            suggestionsContainer.innerHTML = "";
-
-            suggestions.forEach((suggestion) => {
-              const suggestionItem = document.createElement("div");
-              // create div below search box with suggested addresses
-              suggestionItem.className = "suggestion";
-              suggestionItem.textContent = suggestion;
-
-              suggestionItem.addEventListener("click", () => {
-                addressInput.value = suggestion;
-                suggestionsContainer.innerHTML = "";
-              });
-
-              suggestionsContainer.appendChild(suggestionItem);
-            });
-          } else {
-            suggestionsContainer.innerHTML = "";
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-    });
-  }
-
-addAddressSuggestions();
-
-  // // Display service areas on the map
-  // function displayServiceAreas(map, serviceAreaData) {
-  //   Object.keys(serviceAreaData).forEach((serviceAreaName) => {
-  //     const geojsonData = serviceAreaData[serviceAreaName];
-  //     // Add GeoJSON data representing service areas to the map
-  //     L.geoJson(geojsonData).addTo(map);
-  //   });
-  // }
-
-  var map = createMap();
-  var ecuaArea;
-  var lauderhillArea;
-  var miamiArea;
-  var zephryhillsArea;
-  var stuartArea;
-  var leeArea;
-  var newportArea;
-  var pascoArea;
-  var pinellasArea;
-  var stpeteArea;
-  var tampaArea;
-  var hillsboroughArea;
-  var countiesData;
-
-  var selectedArea;
-
-  // Define service areas with corresponding data
-  const serviceAreas = {
-    zephyrihills: zephryhillsArea,
-    lauderhill: lauderhillArea,
-    ecua: ecuaArea,
-    miami: miamiArea,
-    stuart: stuartArea,
-    lee: leeArea,
-    newport: newportArea,
-    pasco: pascoArea,
-    pinellas: pinellasArea,
-    stpete: stpeteArea,
-    tampa: tampaArea,
-    hillsborough: hillsboroughArea,
-  };
-
-  // // Display service areas on the map
-  // displayServiceAreas(map, serviceAreas);
-
-  // Retrieve the address input, geocode it, and display a marker on the map
-  function getAddressAndGeocode() {
-    var address = document.getElementById("address-input").value;
-    var input = document.getElementById("address-input").value;
-    var url =
-      "https://nominatim.openstreetmap.org/search?format=json&q=" +
-      encodeURIComponent(input);
-
-    if (marker) {
-      map.removeLayer(marker);
-    }
-      // Reset the old value of infobox.textContent to an empty string for every search event
-
-      const infobox = document.getElementById("info");
-        infobox.innerHTML = "";
-        infobox.innerHTMLb = ""; //for list of facilities
-
-    // Fetch geocoded data from Nominatim
-    fetch(url)
-      .then((response) => response.json()) //convert response to geojson
-      .then((data) => {
-        if (data && data.length > 0) { //check if valie and contains at least one result
-          const lat = parseFloat(data[0].lat);
-          const lon = parseFloat(data[0].lon);
-
-          marker = L.marker([lat, lon]).addTo(map); //add marker with searched location
-          marker.bindPopup(`Searched Location: ${address}`).openPopup();
-          map.setView([lat, lon], 10);
-
-          //calling  checkServiceAreaOrCounty function.
-
-          selectedArea = checkServiceAreaOrCounty(lat, lon);
-          addMarkers();
-
-          let highestValue = 0;
-
-        if (Array.isArray(facilitiesData)) {
-          facilitiesData.forEach(function (facility) {
-            if (facility.features) {
-              facility.features.forEach(function (feature) {
-                if(selectedArea) {
-                  if(turf.booleanPointInPolygon(feature, selectedArea)) {
-                    if(feature.properties["Total PFAS ppt"] > highestValue) {
-                      highestValue = feature.properties["Total PFAS ppt"];
-                    }
-                  }
-                }
-              });
-              highestFeature = facility.features.find(obj => obj.properties["Total PFAS ppt"] === highestValue);
-              if(!highestFeature) {
-                if (Array.isArray(tapData)) {
-                  tapData.forEach(function (tap) {
-                    if (tap.features) {
-                      tap.features.forEach(function (tapFeature) {
-                        if(selectedArea) {
-                          if(turf.booleanPointInPolygon(tapFeature, selectedArea)) {
-                            if(tapFeature.properties.sumPFAS > highestValue)
-                              highestValue = tapFeature.properties.sumPFAS;
-                          }
-                        }
-
-                      });
-                    }
-                  });
-                }
-                showGraph(highestFeature, tapData, highestValue ?? 0);
-              }
-            }
-          });
-        }
-
-        } else {
-          console.log("Address not found");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  }
-
-  document
-    .getElementById("search-button")
-    .addEventListener("click", getAddressAndGeocode); //call function on click
-
-  // Check which polygon the searched point resides in
-  function checkServiceAreaOrCounty(lat, lon) {
-    const infobox = document.getElementById("info");
-    let foundInServiceArea = false; //flag to check whether point is in service area
-
-    let finalArea;
-
-    for (const areaName in serviceAreas) { //loop through each service area
-      const area = serviceAreas[areaName];
-      const initialArea = isPointInServiceArea(lat, lon, area); //check if point is in service area
-      if (initialArea.exists) { //if in service area
-        if (areaName === "miami") { //check if the area is miami tocheck for subareas
-          const subArea = getSubAreaName(lat, lon, miamiArea);
-          infobox.innerHTML = `<p>You are located in the ${subArea.utilityName} Sub Area of Miami Service Area.</p>`;
-          finalArea = subArea.area;
-        } else { //if not miami
-          infobox.innerHTML = `<p>You are located in the ${areaName.toUpperCase()} Service Area.</p>`;
-          finalArea = initialArea.area;
-        }
-        foundInServiceArea = true; //point is in service area
-        return finalArea;
-      }
-    }
-
-    if (!foundInServiceArea) { //if not in service area
-      const county = isPointInAnyCounty(lat, lon); //check if in a county
-      if (county) {
-        infobox.innerHTML = `<p>Your address is in ${county.nameLsad}.</p>`;
-        finalArea = county.area;
-      } else {
-        infobox.innerHTML =
-          "<p>Location is not within any specified service area or county.</p>";
-      }
-    }
-    return finalArea // returning final area to fetch facility and tap points in future
-  }
-
-  // Check if the polygon is a service area
-  function isPointInServiceArea(lat, lon, serviceArea) {
-    const point = turf.point([lon, lat]);
-    const serviceGeoJSON = serviceArea[0].features; //get polygon of the service area
-    for (const feature of serviceGeoJSON) { //loop through features
-      if (turf.booleanPointInPolygon(point, feature)) { //check if point is inside polygon
-        return { exists: true, area: feature };
-      }
-    }
-    return false;
-  }
-
-  //function to check if the polygon is sub area of Miami.
-  // Get the sub-area name within Miami Service Area
-  function getSubAreaName(lat, lon, miamiArea) {
-    const point = turf.point([lon, lat]);
-    for (const feature of miamiArea[0].features) {
-      if (turf.booleanPointInPolygon(point, feature)) {
-        return { utilityName: feature.properties.UTILITYNAME, area: feature };
-      }
-    }
-    return "Miami";
-  }
-
-  // function to check if polygon is a county
-  function isPointInAnyCounty(lat, lon) {
-    if (countiesData && countiesData[0].features) { //check for counties
-      const point = turf.point([lon, lat]);
-
-      for (const feature of countiesData[0].features) {
-        if (turf.booleanPointInPolygon(point, feature)) {
-          console.log("Found in county:", feature.properties.NAMELSAD);
-          return { nameLsad: feature.properties.NAMELSAD, area: feature };
-        }
-      }
-    }
-
-    console.log("Not in any county.");
-    console.log("Coordinates [lon, lat]:", [lon, lat]);
-    return null;
-  }
-
-  // displayServiceAreas(map, {
-  //   ecua: ecuaArea,
-  //   lauderhill: lauderhillArea,
-  //   miami: miamiArea,
-  //   zephryhills: zephryhillsArea,
-  //   stuartArea: stuartArea,
-  //   lee: leeArea,
-  //   newport: newportArea,
-  //   pasco: pascoArea,
-  //   pinellas: pinellasArea,
-  //   stpete: stpeteArea,
-  //   tampa: tampaArea,
-  //   hillsborough: hillsboroughArea,
-  // });
-
-  // Load county data
-  function loadCountiesData() {
-    countiesData = counties;
-  }
-
-  loadCountiesData();
-
-  // // Add county polygons to the map
-  // function addCountyPolygons(map, countyData) {
-  //   L.geoJSON(countyData, {
-  //     style: {
-  //       color: "blue",
-  //       fillOpacity: 0.2,
-  //     },
-  //   }).addTo(map);
-  // }
-
-  // addCountyPolygons(map, countiesData);
-
-  var facilitiesData;
-  var tapData;
-
-  var dotIcon = L.divIcon({ //create the dot icon for map
-    className: "custom-dot-icon",
-    iconSize: [8, 8],
-  });
-
-  var infoBox = document.getElementById("info");
-  var graph = document.getElementById("graph");
-
-  // Update the information box content
-  function updateInfoBox(Facility) {
-    infoBox.innerHTML = "";
-  }
-
-  // Handle marker click event
-  // function to trigger on click events on facilities and to crop out tap points
-  function onMarkerClick(feature) {
-      const infobox = document.getElementById("info");
-      let highestValue = 0;
-      let count = 0;
-
-      let inbox;
-      //finding highest sumPFAS
-
-      let tested;
-      let detected;
-
-      if (Array.isArray(tapData)) {
-            tapData.forEach(function (tap) {
-              if (tap.features) {
-                tap.features.forEach(function (tapFeature) {
-                  if(selectedArea) {
-                    if(turf.booleanPointInPolygon(tapFeature, selectedArea)) {
-                      if(tapFeature.properties.sumPFAS > highestValue) {
-                        highestValue = tapFeature.properties.sumPFAS;
-                        tested = tapFeature.properties.tested;
-                        detected = tapFeature.properties.detected;
-                      }
-                      count++;
-                    }
-                  }
-                });
-                if(count==0){
-                              infobox.innerHTML1 = `<p> No households tap water were tested in your area. </p>`;
-
-                }
-                else{
-                infobox.innerHTML1 = `<b> Tap Water Testing </b> <p>In a 2023 study, ${count} households tap water were tested in your area.</p> <p> The highest total detection of PFAS was ${highestValue}. </p> <p>The study tested for ${tested} types of PFAS, and ${detected} were detected.</p>`;
-              }}
-            });
-          }
-          infobox.innerHTML = infobox.innerHTML + `\n${infobox.innerHTML1}`;
-          showGraph(feature, tapData, highestValue ?? 0);
-        }
-  // function to display graphs
-
-  function showGraph(feature, tapData, highestValue) {
-      Highcharts.chart("container", {
-          chart: {
-              type: "column",
-          },
-          title: {
-              text: "PFAS Results in " + feature.properties.City,
-              align: 'left',
-          },
-          subtitle: {
-              text: 'Source: Dr. Bowden and ' + feature.properties.Facility,
-              align: 'left',
-          },
-          xAxis: {
-              categories: [
-                  'Highest Detection at ' + feature.properties.Facility, 'Highest Household Detection in ' + highestFeature.properties.County + "'s tap water."
-              ],
-              title: {
-                  text: null,
-              },
-              accessibility: {
-                  description: "PFAS",
-              },
-          },
-          yAxis: {
-              min: 0,
-              tickInterval: 2,
-              title: {
-                  text: "Sum of PFAS in /ppt",
-              },
-              labels: {
-                  overflow: "justify",
-                  format: "{value}",
-              },
-              plotLines: [{
-                  value: 4,
-                  color: 'red',
-                  dashStyle: 'solid',
-                  width: 2,
-                  label: {
-                      text: 'EPA Recommendation',
-                      align: 'left',
-                  },
-                  zIndex: 5, // Set a higher zIndex to display the line over the bars
-              }],
-          },
-          plotOptions: {
-              column: {
-                  dataLabels: {
-                      enabled: true,
-                      format: "{y}",
-                  },
-              },
-          },
-          tooltip: {
-              valueSuffix: " /ppt",
-              stickOnContact: true,
-              backgroundColor: "rgba(255, 255, 255, 0.93",
-          },
-          legend: {
-              enabled: true,
-          },
-          series: [
-              {
-                  name: "PFOA+PFOS",
-                  data: [
-                      feature.properties["PFOA+PFOS"],
-                      highestFeature.properties["PFOA+PFOS"],
-                  ],
-                  borderColor: "#5997DE",
-              },
-              {
-                  name: "Total PFAS",
-                  data: [
-                      feature ? feature.properties["Total PFAS ppt"] : 0,
-                      highestValue,
-                  ],
-                  borderColor: "#5997DE",
-              },
-          ],
-      });
-  }
-
-
-  addMarkers();
-
-  // Add markers for facilities to the map
-  function addMarkers() {
-    const infobox = document.getElementById("info");
-    let highestValue = 0;
-
-    if (Array.isArray(facilitiesData)) { //check facilities
-      facilitiesData.forEach(function (facility) {
-        if (facility.features) {
-          facility.features.forEach(function (feature) { //loop thorugh facilities features
-            const coordinates = feature.geometry.coordinates;
-            var marker = L.marker([coordinates[1], coordinates[0]], {
-              icon: dotIcon, //set custom marker
-            }).bindPopup(
-              "<h3>" +
-                feature.properties.Facility +
-                "</h3>" +
-                "<p>" +
-                "In its latest testing in " +
-                feature.properties.Year +
-                ", this facility detected " +
-                feature.properties["# PFAS detected"] +
-                " types of PFAS, amounting to a total of " +
-                feature.properties["Total PFAS ppt"] +
-                " ppt." +
-                "</p>"
-            );
-            marker.addTo(map);
-            marker.on("click", function () {
-              onMarkerClick(feature);
-            });
-
-    // Finding highest value for facility graph bar
-
-            if (selectedArea) {
-              if (turf.booleanPointInPolygon(feature, selectedArea)) {
-                if (feature.properties["Total PFAS ppt"] > highestValue) {
-                  highestValue = feature.properties["Total PFAS ppt"];
-
-                  // Collecting names of facilities in the polygon
-
-                      infobox.innerHTMLa = feature.properties.Facility;
-                      if (infobox.innerHTMLb == "") {
-                        infobox.innerHTMLb = infobox.innerHTMLa;
-                      } else {
-                        infobox.innerHTMLb =
-                          infobox.innerHTMLb + ", " + infobox.innerHTMLa;
-                      }
-                    }
-                  }
-                }
-                infobox.innerHTMLc = "<p> The water providers in your area are: </p>";
-              });
-        // Find the feature with the highest PFAS value within the facility.
-          highestFeature = facility.features.find(
-            (obj) => obj.properties["Total PFAS ppt"] === highestValue
-          );
-
-          if (highestFeature)  {
-            const highestCoordinates = highestFeature.geometry.coordinates; // Get the coordinates of the highest feature
-            var highestMarker = L.marker([highestCoordinates[1], highestCoordinates[0]], { icon: dotIcon }).addTo(map);
-
-
-              // InfoBox display for facility data
-
-              infobox.innerHTML1 = `<b> Facility Testing </b> <p> You are being served by the water provider:
-               ${highestFeature.properties.Facility}. </p>
-               <p>In its latest testing in ${highestFeature.properties.Year},
-               this facility detected ${highestFeature.properties["# PFAS detected"]}
-               types of PFAS, amounting to a total of ${highestFeature.properties["Total PFAS ppt"]} ppt. </p>`;
-
-                    // ultimate infobox display
-                    if (infobox.innerHTMLb !== infobox.innerHTMLa) {
-                      // If number of facilities is more than one
-                    infobox.innerHTML =
-                    infobox.innerHTML +
-                    " " + // Add a space
-                    infobox.innerHTMLc +
-                    infobox.innerHTMLb + "." + // Add a full stop
-                    infobox.innerHTML1;
-                    } else {
-                      // IF number of facilities is one
-                      infobox.innerHTML =
-                        infobox.innerHTML + infobox.innerHTML1;
-                    }
-                    onMarkerClick(highestFeature);
-                  }
-                  else {
-                    let count = 0;
-                    let tested;
-                    let detected;
-                    if (Array.isArray(tapData)) {
-                      tapData.forEach(function (tap) {
-                        if (tap.features) {
-                          tap.features.forEach(function (tapFeature) {
-                            if(selectedArea) {
-                              if(turf.booleanPointInPolygon(tapFeature, selectedArea)) {
-                                if(tapFeature.properties.sumPFAS > highestValue) {
-                                  highestValue = tapFeature.properties.sumPFAS;
-                                  tested = tapFeature.properties.tested;
-                                  detected = tapFeature.properties.detected;
-                                }
-                                count++;
-                              }
-                            }
-                          });
-                          if(count==0)
-                        {infobox.innerHTML1=""; }
-                        else{
-                          infobox.innerHTML1 = `<b> Tap Water Testing </b> <p>In a 2023 study, tap water in ${count} households in your area was tested.  The highest total detection of PFAS was ${highestValue}. </p> <p>The study tested for ${tested} types of PFAS, and ${detected} were detected.</p>`;
-                        }}
-                      });
-                    }
-                    infobox.innerHTML = infobox.innerHTML + `\n${infobox.innerHTML1}`;
-                  }
-                }
-              });
-            }
-          }
-
-
-
-
-          addMarkers();
-
-
-//mobile nav bar hamburger icon
-
-const hamburgerIcon = document.getElementById("hamburger-icon");
-const expandedMenu = document.getElementById("expanded-menu");
-
-// Add a click event listener to the hamburger icon
-hamburgerIcon.addEventListener("click", () => {
-  // Toggle the display of the expanded menu
-  if (expandedMenu.style.display === "block") {
-    expandedMenu.style.display = "none";
-  } else {
-    expandedMenu.style.display = "block";
-  }
-});
 
-</script>
 </html>

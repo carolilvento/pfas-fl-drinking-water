@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PFAS in Drinking Water</title>
+  <title>PFAS in Drinking Water: Human Stories</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
   <link rel="stylesheet" href="styles/first_map.css">
 </head>
 
 <!------------------------------------------ BODY ----------------------------------->
-<header>
+<header id="navbar">
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What Is PFAS?</a></li>
-        <li><a href="index.html">Contaminated Facilities </a></li>
-        <li><a href="accountability.html">What Is Being Done</a></li>
-        <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+        <li><a href="map.html">Is Your Water Contaminated? </a></li>
+        <li><a href="accountability.html">From Discovery to Regulation</a></li>
+        <li><a href="impact.html">Human Impact</a></li>
         <li><a href="solutions.html">What You Can Do</a></li>
       </ul>
     </nav>
@@ -26,10 +27,11 @@
 <div id="hamburger-icon">&#9776; See Menu</div>
 <div id="expanded-menu">
   <ul>
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">What Is PFAS?</a></li>
-    <li><a href="index.html">Contaminated Facilities </a></li>
-    <li><a href="accountability.html">What Is Being Done</a></li>
-    <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+    <li><a href="map.html">Is Your Water Contaminated? </a></li>
+    <li><a href="accountability.html">From Discovery to Regulation</a></li>
+    <li><a href="impact.html">Human Impact</a></li>
     <li><a href="solutions.html">What You Can Do</a></li>
   </ul>
 </div>
@@ -53,6 +55,7 @@ hamburgerIcon.addEventListener("click", () => {
 </script>
 
 <body>
+  <div id=content>
     <h1>Uncovering ‘Forever Chemicals’: The Human Impact of PFAS Contamination</h1>
 
     <i id=attribution>By Carolina Ilvento</i>
@@ -134,5 +137,20 @@ hamburgerIcon.addEventListener("click", () => {
     <p>After meeting Bailey, Jackson became an advocate for Fight for Zero, driven by her own experience with cancer and her connection to PFAS contamination. She has dedicated herself to raising awareness about PFAS and pushing for stricter regulations to safeguard public health.</p>
 
     <p class=quote>“I don't want any other family to go through this,” Bailey said. “We can't just sit back and allow it to keep happening. We've got to make some serious change here that is going to protect our future generations.”</p>
+    </div>
+
+    <br>
+
+    <a href="solutions.html"</a>
+      <button id=page-button>Continue to Part 5: How to Minimize Exposure
+    </button>
+    </a>
+
+    <br>
+
+    <footer>
+        <p>&copy; 2023 Carolina Ilvento |
+        <i>Contact: carolilvento@gmail.com</i> </p>
+    </footer>
 </body>
 </html>

@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PFAS in Drinking Water</title>
+  <title>PFAS in Drinking Water: What is PFAS</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
   <link rel="stylesheet" href="styles/first_map.css">
 </head>
 
 <!------------------------------------------ BODY ----------------------------------->
-<header>
+<header id="navbar">
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What Is PFAS?</a></li>
-        <li><a href="index.html">Contaminated Facilities </a></li>
-        <li><a href="accountability.html">What Is Being Done</a></li>
-        <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+        <li><a href="map.html">Is Your Water Contaminated? </a></li>
+        <li><a href="accountability.html">From Discovery to Regulation</a></li>
+        <li><a href="impact.html">Human Impact</a></li>
         <li><a href="solutions.html">What You Can Do</a></li>
       </ul>
     </nav>
@@ -26,10 +27,11 @@
 <div id="hamburger-icon">&#9776; See Menu</div>
 <div id="expanded-menu">
   <ul>
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">What Is PFAS?</a></li>
-    <li><a href="index.html">Contaminated Facilities </a></li>
-    <li><a href="accountability.html">What Is Being Done</a></li>
-    <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+    <li><a href="map.html">Is Your Water Contaminated? </a></li>
+    <li><a href="accountability.html">From Discovery to Regulation</a></li>
+    <li><a href="impact.html">Human Impact</a></li>
     <li><a href="solutions.html">What You Can Do</a></li>
   </ul>
 </div>
@@ -53,13 +55,14 @@ hamburgerIcon.addEventListener("click", () => {
 </script>
 
 <body>
+  <div id=content>
 
 <h1> Making Sense of Forever Chemicals </h1>
 
 <i id=attribution>By Carolina Ilvento</i>
 
   <p>
-    Have you ever wondered the science behind the resilience of everyday items like paper straws that don't disintegrate in water, waterproof mascara that stays put at the beach, or the way the paper beneath your fries darkens without feeling greasy?
+    Have you ever wondered about the science behind the resilience of everyday items like paper straws that don't disintegrate in water, waterproof mascara that stays put at the beach, or the way the paper beneath your fries darkens without feeling greasy?
   </p>
   <p>
     The science behind all those novelties comes down to PFAS, short for per- and poly-fluoroalkyl substances.
@@ -68,25 +71,25 @@ hamburgerIcon.addEventListener("click", () => {
   <h2>What are they?</h2>
 
   <p>
-  Popularly referred to as ‘forever chemicals,’ PFAS are a group of long-lasting, man-made chemicals linked to serious health implications, including increased risk of cancer, birthborne diseases and decreased fertility.
+  Popularly referred to as "forever chemicals," PFAS are a group of long-lasting, man-made chemicals linked to serious health implications, including increased risk of cancer, birth defects and decreased fertility.
   </p>
   <p>
   You might have seen PFAS in several recent news headlines, warning about the risks of forever chemicals. But with so many synthetic chemicals known to be harmful to human health, you might wonder why these are a big deal.
   </p>
   <p>
-  The simple answer is that even though you can’t see, touch, taste or smell PFAS, they are said to be ‘everywhere.’ Experts estimate that over 98% of the American population has been exposed to this invisible, yet toxic, chemical, according to a National Health and Nutrition Examination Survey <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2072821/">data</a>.
+  The simple answer is that even though you can’t see, touch, taste or smell PFAS, they are said to be "everywhere." Experts estimate that over 98% of the American population has been exposed to this invisible, yet toxic, chemical, according to a National Health and Nutrition Examination Survey <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2072821/">data</a>.
   </p>
   <p>
-  ‘Everywhere’ is indeed a generalization, but humans come in contact with PFAS routinely.
+  "Everywhere" is indeed a generalization, but humans come in contact with PFAS routinely.
   </p>
 
   <h2> Where are they? </h2>
 
   <p>
-  From your morning skin care routine to cooking, cleaning, eating, drinking or even purchasing otherwise considered ‘environment friendly’ products, it can feel almost impossible to avoid PFAS in a daily basis.
+  From your morning skin care routine to cooking, cleaning, eating, drinking or even purchasing otherwise considered "environment friendly" products, it can feel almost impossible to avoid PFAS in a daily basis.
   </p>
   <p>
-  So how did this knowingly toxic chemical become so popular in our society?
+  So how did this known toxic chemical become so common in our society?
   </p>
   <p>
   PFAS was introduced to the manufacture of industry and consumer good products in the 1940s because of its very unique feature: resistance to heat and water.
@@ -95,7 +98,7 @@ hamburgerIcon.addEventListener("click", () => {
   Initially meant for warzone use to keep tanks from being damaged by bombs and storms, PFAS became extremely appealing to industrial companies like Dupont and 3M, who found these chemicals allowed for innovative functionalities in several consumer products, starting with Teflon pans.
   </p>
   <p>
-  Since then, the list of products containing forever chemicals has only grown. Think of anything that somehow can withstand water and heat, and chances are… PFAS are behind it.
+  Since then, the list of products containing forever chemicals has only grown. Think of anything that somehow can withstand water and heat, and chances are: PFAS are behind it.
   </p>
   <p>
   Some popular consumer goods include non-stick cookware, stain-resistant furniture and carpet, water-proof fabric, non-grease food packaging, several cleaning and cosmetic products, and even paper straws.
@@ -110,7 +113,7 @@ hamburgerIcon.addEventListener("click", () => {
   While seemingly magical, this high-functioning, multi-use resistance comes at a cost — it doesn’t naturally break down.
   </p>
   <p>
-  This means that PFAS bioaccumulates in the environment and human body indefinetely, and health risks only build up with time. This enduring nature gave origin to its popular name: 'forever chemicals.'
+  This means that PFAS bioaccumulates in the environment and human body indefinetely, and health risks only build up with time. This enduring nature gave origin to its popular name: "forever chemicals."
   </p>
   <p>
   PFAS impacts to the human body and health through exposure over time are a matter of significant concern.
@@ -130,7 +133,7 @@ hamburgerIcon.addEventListener("click", () => {
       <li> Increased cholesterol levels and/or risk of obesity. </li>
     </ul>
 
-  <h2> PFAS in Drinking Water </h2>
+  <h2> PFAS in drinking water </h2>
   <p>
     While the use of products containing PFAS can be limited, forever chemicals are currently most prevelant in Earth’s life source: water.
   </p>
@@ -147,10 +150,10 @@ hamburgerIcon.addEventListener("click", () => {
     In efforts to mitigate health risks, researchers have worked to develop maximum contaminant levels (MCLs) measured in parts per trillion (ppt).
   </p>
   <p>
-    In simpler terms, one part per trillion is equivalent to one drop of impurity in 32 Olympic-sized pools of water or traveling 6 inches out of a 93 million-mile journey toward the sun. While seemingly insignificant, this miniscule unit of measurement is required to test for PFAS, in order to take into consideration accumulation over time that can pose significant health risks.
+    In simpler terms, one part per trillion is equivalent to one drop of impurity in 32 Olympic-sized pools of water, or traveling 6 inches out of a 93 million-mile journey toward the sun. While seemingly insignificant, this miniscule unit of measurement is required to test for PFAS, in order to take into consideration accumulation over time that can pose significant health risks.
   </p>
   <p>
-    The EPA currently has standards of 70 ppt, but a rule proposed in March suggested a <a href="https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas">maximum of four ppt</a> for PFOA and PFOS, the most commonly seen types of PFAS, and one worldstopexports as an enforceable limit for PFAS found in drinking water.
+    The EPA currently has standards of 70 ppt, but a rule proposed in March 2023 suggested a <a href="https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas">maximum of four ppt</a> for PFOA and PFOS, the most commonly seen types of PFAS, as an enforceable limit for PFAS found in drinking water.
   </p>
   <p>
     In comparison, lead concentration in water is considered risky at 15 parts per billion. That is over 2 billion times higher than PFAS’ current limits — thus demonstrating the severity.
@@ -158,15 +161,24 @@ hamburgerIcon.addEventListener("click", () => {
   <p>
     As of October 2023, there are no federal policies in place to enforce these limits and regulate forever chemicals in water.
   </p>
-    <a href="accountability.html#what-has-been-done"</a>
+    <!-- <a href="accountability.html#what-has-been-done"</a>
       <button id=page-button>Learn More About What Is Being Done</button>
-    </a>
+    </a> -->
   <p>
     The lingering question is how to limit human exposure to something that is everywhere. Beyond avoiding products containing PFAS, an important measure is to find out if your home water is contaminated.
   </p>
-  <a href="index.html#pfas-in-water">
-    <button id=page-button>Search For Testing In Your Area</button>
+  <a href="map.html">
+    <button id=page-button>Continue to Part 2: Search For Testing In Your Area</button>
   </a>
+
+  <br>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Carolina Ilvento |
+    <i>Contact: carolilvento@gmail.com</i> </p>
+</footer>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 ### Project Description
 This project examines PFAS levels in Florida drinking water systems and 460 households across the state that tested at tap water levels.
-The site includes an explanatory overview of PFAS, its impact on human health, progress and solutions. 
+The site includes an explanatory overview of PFAS, its impact on human health, progress and solutions.
 
 ### Site Functionality
 #### This site features:

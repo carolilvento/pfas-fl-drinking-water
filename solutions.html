@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PFAS in Drinking Water</title>
+  <title>PFAS in Drinking Water: Solutions</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
   <link rel="stylesheet" href="styles/first_map.css">
 </head>
 
-<header>
+<header id="navbar">
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What Is PFAS?</a></li>
-        <li><a href="index.html">Contaminated Facilities </a></li>
-        <li><a href="accountability.html">What Is Being Done</a></li>
-        <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+        <li><a href="map.html">Is Your Water Contaminated? </a></li>
+        <li><a href="accountability.html">From Discovery to Regulation</a></li>
+        <li><a href="impact.html">Human Impact</a></li>
         <li><a href="solutions.html">What You Can Do</a></li>
       </ul>
     </nav>
@@ -25,10 +26,11 @@
 <div id="hamburger-icon">&#9776; See Menu</div>
 <div id="expanded-menu">
   <ul>
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">What Is PFAS?</a></li>
-    <li><a href="index.html">Contaminated Facilities </a></li>
-    <li><a href="accountability.html">What Is Being Done</a></li>
-    <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+    <li><a href="map.html">Is Your Water Contaminated? </a></li>
+    <li><a href="accountability.html">From Discovery to Regulation</a></li>
+    <li><a href="impact.html">Human Impact</a></li>
     <li><a href="solutions.html">What You Can Do</a></li>
   </ul>
 </div>
@@ -52,6 +54,7 @@ hamburgerIcon.addEventListener("click", () => {
 </script>
 
 <body>
+  <div id=content>
     <h1>Minimizing PFAS Exposure: Protecting Your Health and Home</h1>
 
     <i id=attribution>By Carolina Ilvento</i>
@@ -71,9 +74,11 @@ hamburgerIcon.addEventListener("click", () => {
     <p>When it comes to safeguarding your drinking water from PFAS, choosing the right water filter is fundamental. Some effective options include:</p>
 
     <ul>
-        <li><strong>Reverse Osmosis (RO) Systems:</strong> RO filters utilize a semi-permeable membrane to remove a wide range of contaminants, including PFAS. These systems force water through the membrane, leaving impurities behind. RO filters can effectively reduce PFAS levels in your drinking water. Keep in mind that they may have a slower flow rate compared to standard faucets.</li>
-
-        <li><strong>Granular Activated Carbon (GAC) Filters:</strong> GAC filters use porous carbon to adsorb contaminants from water. They can effectively remove PFAS substances, making them a solid choice for PFAS reduction. GAC filters might also have a lower water flow compared to regular faucets.</li>
+        <li><strong>Reverse Osmosis (RO) Systems:</strong> RO filters utilize a semi-permeable membrane to remove a wide range of contaminants, including PFAS. These systems force water through the membrane, leaving impurities behind. RO filters can effectively reduce PFAS levels in your drinking water. Keep in mind that they may have a slower flow rate compared to standard faucets.
+        </li>
+        <br>
+        <li><strong>Granular Activated Carbon (GAC) Filters:</strong> GAC filters use porous carbon to adsorb contaminants from water. They can effectively remove PFAS substances, making them a solid choice for PFAS reduction. GAC filters might also have a lower water flow compared to regular faucets.
+        </li>
     </ul>
 
     <p>Both RO and GAC filters are effective at reducing PFAS in drinking water. Your choice may depend on your specific needs, such as the range of contaminants you want to address and your water flow preferences.</p>
@@ -128,5 +133,15 @@ hamburgerIcon.addEventListener("click", () => {
         <li><strong>Fish Consumption:</strong> Be aware of fish consumption guidelines in your region, especially if your local waterways are affected by PFAS contamination. </li>
         <li><strong>Outdoor Activities:</strong> If you engage in activities in lakes, streams, or rivers, always wash your hands before eating if you've had contact with foam or water. Prevent accidental swallowing of water and ensure you, your family, and pets rinse or shower after such activities.</li>
     </ul>
+
+    <br>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Carolina Ilvento |
+        <i>Contact: carolilvento@gmail.com</i> </p>
+    </footer>
+
 </body>
 </html>

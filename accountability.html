@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PFAS in Drinking Water</title>
+  <title>PFAS in Drinking Water: Accountability</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
   <link rel="stylesheet" href="styles/first_map.css">
 </head>
 
 <!------------------------------------------ BODY ----------------------------------->
-<header>
+<header id="navbar">
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">What Is PFAS?</a></li>
-        <li><a href="index.html">Contaminated Facilities </a></li>
-        <li><a href="accountability.html">What Is Being Done</a></li>
-        <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+        <li><a href="map.html">Is Your Water Contaminated? </a></li>
+        <li><a href="accountability.html">From Discovery to Regulation</a></li>
+        <li><a href="impact.html">Human Impact</a></li>
         <li><a href="solutions.html">What You Can Do</a></li>
       </ul>
     </nav>
@@ -26,10 +27,11 @@
 <div id="hamburger-icon">&#9776; See Menu</div>
 <div id="expanded-menu">
   <ul>
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">What Is PFAS?</a></li>
-    <li><a href="index.html">Contaminated Facilities </a></li>
-    <li><a href="accountability.html">What Is Being Done</a></li>
-    <li><a href="impact.html">Impact of Forever Chemicals</a></li>
+    <li><a href="map.html">Is Your Water Contaminated? </a></li>
+    <li><a href="accountability.html">From Discovery to Regulation</a></li>
+    <li><a href="impact.html">Human Impact</a></li>
     <li><a href="solutions.html">What You Can Do</a></li>
   </ul>
 </div>
@@ -53,12 +55,15 @@ hamburgerIcon.addEventListener("click", () => {
 </script>
 
 <body>
+  <div id=content>
 
 <h1>How Did ‘Forever Chemicals’ Get ‘Everywhere’</h1>
 
 <i id=attribution>By Carolina Ilvento</i>
 
 <p> Industries have been aware of the risks and health impacts associated with "forever chemicals" since the 1950s, yet comprehensive standards to regulate their use are still pending finalization. The timeline  below traces the journey from the invention of these chemicals to the ongoing endeavors to establish regulations. </p>
+
+<div id=timeline>
 <h2>Timeline</h2>
 <h5>1940s</h5>
 <p>
@@ -117,17 +122,18 @@ Following their development during World War II, industrial companies began to f
 <br>
 <hr class="horizontal-line">
 <br>
-<h5>2010s </h5>
+<h5>2010s</h5>
 <p>The EPA issues provisional health advisories for PFOA and PFOS in drinking water, setting combined limits of 400 parts per trillion (ppt).</p>
 <p>PFAS contamination gains attention as it affects more communities. The EPA works on establishing regulatory standards and guidelines, leading to the identification of more PFAS compounds beyond PFOA and PFOS.</p>
-<h5>2016:</h5> <p>A significant PFAS contamination crisis in Flint, Michigan, draws national attention to the issue.</p>
+<h5>2016</h5> <p>A significant PFAS contamination crisis in Flint, Michigan, draws national attention to the issue.</p>
 <br>
 <hr class="horizontal-line">
 <br>
-<h5>2020: </h5><p>The National Defense Authorization Act (NDAA) requires the U.S. Department of Defense to phase out the use of AFFF firefighting foams containing PFAS.</p>
-<h5>2021:</h5> <p>The EPA announces its PFAS Action Plan to address PFAS contamination comprehensively.</p>
+<h5>2020</h5><p>The National Defense Authorization Act (NDAA) requires the U.S. Department of Defense to phase out the use of AFFF firefighting foams containing PFAS.</p>
+<h5>2021</h5> <p>The EPA announces its PFAS Action Plan to address PFAS contamination comprehensively.</p>
 <br>
 <hr class="horizontal-line">
+</div>
 <br>
 
 <h2><a name="what-has-been-done"></a>What has been done?</h2>
@@ -165,6 +171,19 @@ Following their development during World War II, industrial companies began to f
 
 <p>The first report stemming from UCMR 5 was released in July 2023, offering a valuable snapshot of the ongoing efforts to ensure the safety and quality of drinking water.</p>
 
+<a href="impact.html"</a>
+  <button id=page-button>Continue to Part 4: When "Forever Chemicals Hit Home"
+</button>
+</a>
 
+<br>
+
+  </div>
+
+  <footer>
+      <p>&copy; 2023 Carolina Ilvento |
+      <i>Contact: carolilvento@gmail.com</i> </p>
+  </footer>
+  
 </body>
 </html>
